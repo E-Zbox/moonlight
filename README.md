@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# My MoonLight Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+-   [Overview](#overview)
+    -   [Project's Description](#project-description)
+    -   [Screenshots](#screenshot)
+-   [How to Install and Run project](#how-to-install-and-this-project)
+    -   [Clone this repo](#to-clone-this-repo)
+    -   [Running the application](#running-the-application)
+-   [Where I be spitting lines](#where-i-be-spitting-lines)
+-   [Live Version of Site](#live-version-of-site)
+-   [Author](#author)
+-   [Acknowledgments](#acknowledgements)
+-   [Learn More](#learn-more)
+
+## Overview
+
+### Project's Description
+
+This is a clone and a bit of refactoring of this [Live Demo] (https://templatemo.com/live/templatemo_512_moonlight)
+
+### Screenshots
+
+![Inside the project](./public/screenshots/01.png)
+
+## How to Install and Run this project
+
+### To clone this code
 
 In the project directory, you can run:
 
-### `npm start`
+### Clone this repo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow the steps below to clone this code
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   On your terminal, copy and paste this code ` git clone https://E-Zbox/...`
+-   Once successful, run `npm install` to install necessary dependencies
 
-### `npm test`
+### Running the application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow the steps below to the application running
 
-### `npm run build`
+-   Go to the director where the repo was cloned into `cd moonlight`
+-   Run `npm start` on your terminal and wait a few minutes for development server to be up and running
+-   Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Where I be spitting Lines
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[NavbarStyles](./src/components/Styles/Navbar/index.jsx)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```js
+...
+const animateMenuListBefore = (bgColor) => keyframes`
+    0% {
+        width: 0%;
+        height: 1px;
+    }
+    30% {
+        width: 10%;
+        height: 1px;
+    }
+...
+```
 
-### `npm run eject`
+[ContainerStyles](./src/components/Styles/Other/Container.jsx)
+Line 100
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```js
+&::-webkit-scrollbar {
+        width: 10px;
+        &-button {
+            height: 0px;
+        }
+        &-thumb {
+            background-color: ${({
+                theme: {
+                    colors: { white03 },
+                },
+            }) => white03};
+        }
+        &-track {
+            background-color: ${({
+                theme: {
+                    colors: { dark02 },
+                },
+            }) => dark02};
+        }
+    }
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Live version of site
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> https://not-available.cos
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Author
+
+Follow me on social media
+Twitter - [@ceoCodes](https://www.twitter.com/ceocodes)
+
+## Acknowledgments
+
+### This project was built using `npx create-react-app` to learn
+
+### Cloned webpage was provided by [Templatemo](https://templatemo.com/)
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
