@@ -100,11 +100,11 @@ Twitter - [@ceoCodes](https://www.twitter.com/ceocodes)
 
 ## Acknowledgments
 
-### This project was built using `npx create-react-app` to learn
-
 ### Cloned webpage was provided by [Templatemo](https://templatemo.com/)
 
 ## Learn More
+
+### This project was built using `npx create-react-app`
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
