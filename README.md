@@ -34,7 +34,7 @@ In the project directory, you can run:
 
 Follow the steps below to clone this code
 
--   On your terminal, copy and paste this code ` git clone https://E-Zbox/...`
+-   On your terminal, copy and paste this code ` git clone https://github.com/E-Zbox/moonlight.git`
 -   Once successful, run `npm install` to install necessary dependencies
 
 ### Running the application
